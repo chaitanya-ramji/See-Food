@@ -1,5 +1,4 @@
 # See-Food
-------------------------------------------------------------------------------------------------------------------------------
 
 ### Description ###
 An iOS inspired by HBO's Silicon Valley built to classify food and provide it's nutritive information. The app contains a CoreML model built with Keras 1.2.2 and is a fine-tuned InceptionV3 model. The model is built to recognize over 150 dishes from multiple cuisines. For each of these dishes I gathered around 800 to 9000 images from Google, Instagram and Flickr which matched a search query to the title of the category.
