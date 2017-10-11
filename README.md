@@ -80,7 +80,7 @@ print("\(result.classLabel) - \(converted) %")
 
 
 ### Screenshots ###
-![picture alt](https://i.imgur.com/jTK15tr.png)
+![picture alt](https://i.imgur.com/a/TdBB8.png)
 
 ### Future Plans ###
 - [ ] Cuisine Categorization
