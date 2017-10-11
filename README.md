@@ -15,5 +15,10 @@ You don't have to limit yourself to a binary classifier of course; CNNs can easi
 ### The Project ###
 As an introductory project for myself, and on the lines of what I have learnt in CS229 at Stanford, I chose to use a pre-trained image classifier that comes with Keras. I have been in love with HBO's silicon valley and I'm especially fond of the character Jian Yang. Hence I chose this project.
 
+There are 150 different classes of food with 800 to 900 labeled images per class for supervised training. 
+
+### Approach ###
+I found this script on github: [keras-finetuning](https://github.com/danielvarga/keras-finetuning) and used it for the finetuning of my dataset.
+
 ### Screenshots ###
 ![picture alt](https://raw.githubusercontent.com/chaitanya-ramji/See-Food/master/banner-screenshot.png)
