@@ -3,8 +3,6 @@
 ### Description ###
 An iOS Application inspired by HBO's Silicon Valley built to classify food and provide it's nutritive information. The app contains a CoreML model built with [Keras 1.2.2](https://keras.io) and is a fine-tuned [InceptionV3 model](https://arxiv.org/abs/1512.00567). The model is built to recognize over 150 dishes from multiple cuisines. For each of these dishes I gathered around 800 to 9000 images from Google, Instagram and Flickr which matched a search query to the title of the category. I was able to achieve **86.97%** Top-1 Accuracy and **97.42%** Top-5 Accuracy
 
-![picture alt](https://media.giphy.com/media/3ohzdEmIZBWZkV1Y7m/giphy.gif)
-
 ### Introduction ###
 Convolutional Neural Networks (CNN), a technique within the broader Deep Learning field, have been a revolutionary force in Computer Vision applications, especially in the past half-decade or so. One main use-case is that of image classification, e.g. determining whether a picture is that of a dog or cat.
 
