@@ -46,3 +46,9 @@ I'll be uploading the code and it's usage soon.
 
 ### Screenshots ###
 ![picture alt](https://raw.githubusercontent.com/chaitanya-ramji/See-Food/master/banner-screenshots.png)
+
+### Future Plans ###
+[]Cuisine Categorization
+[]Fetch Recipie for image
+[]Increase dataset to include over 300 titles
+[]Reduce latency while identifying the food item
