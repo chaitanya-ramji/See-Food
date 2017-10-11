@@ -1,4 +1,4 @@
-![picture alt](https://imgur.com/NPKin9Y)
+![picture alt](https://i.imgur.com/NPKin9Y.png)
 
 ### Description ###
 An iOS Application inspired by HBO's Silicon Valley built to classify food and provide it's nutritive information. The app contains a CoreML model built with [Keras 1.2.2](https://keras.io) and is a fine-tuned [InceptionV3 model](https://arxiv.org/abs/1512.00567). The model is built to recognize over 150 dishes from multiple cuisines. For each of these dishes I gathered around 800 to 900 images from Google, Instagram and Flickr which matched a search query to the title of the category. I was able to achieve **86.97%** Top-1 Accuracy and **97.42%** Top-5 Accuracy
@@ -80,7 +80,7 @@ print("\(result.classLabel) - \(converted) %")
 
 
 ### Screenshots ###
-![picture alt](https://imgur.com/jTK15tr)
+![picture alt](https://i.imgur.com/jTK15tr.png)
 
 ### Future Plans ###
 - [ ] Cuisine Categorization
