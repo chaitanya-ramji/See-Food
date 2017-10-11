@@ -21,4 +21,4 @@ There are 150 different classes of food with 800 to 900 labeled images per class
 I found this script on github: [keras-finetuning](https://github.com/danielvarga/keras-finetuning) and used it for the finetuning of my dataset.
 
 ### Screenshots ###
-![picture alt](https://raw.githubusercontent.com/chaitanya-ramji/See-Food/master/banner-screenshot.png)
+![picture alt](https://raw.githubusercontent.com/chaitanya-ramji/See-Food/master/banner-screenshots.png)
