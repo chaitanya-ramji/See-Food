@@ -27,7 +27,19 @@ Once I built my model, I had to convert it into a __.mlmodel__ file for use insi
 ### Converting Trained Models to Core ML ###
 I used [Core ML Tools](https://pypi.python.org/pypi/coremltools) to convert it to the Core ML model format.
 > #### NOTE ####
->Core ML Tools is a Python package ('coremltools'), hosted at the Python Package Index (PyPI). For information about Python packages, see Python Packaging User Guide.
+>Core ML Tools is a Python package (`coremltools`), hosted at the Python Package Index (PyPI). For information about Python packages, see Python Packaging User Guide.
+
+This is how you can convert a kera built model to CoreML using the tools.
+
+```python
+
+import coremltools
+coreml_model = coremltools.converters.keras.convert('foodModel.h5')
+
+coreml_model.save('foodModel.mlmodel')
+```
+
+
 
 ### Screenshots ###
 ![picture alt](https://raw.githubusercontent.com/chaitanya-ramji/See-Food/master/banner-screenshots.png)
