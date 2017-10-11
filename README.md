@@ -41,6 +41,8 @@ coreml_model.save('foodModel.mlmodel')
 
 Once the CoreML model was created, I imported it into my Xcode workspace and let Xcode automatically create the class for it. I simply used these classes in my swift code for detection of food.
 
+### Code and Usage ###
+I'll be uploading the code and it's usage soon.
 
 ### Screenshots ###
 ![picture alt](https://raw.githubusercontent.com/chaitanya-ramji/See-Food/master/banner-screenshots.png)
