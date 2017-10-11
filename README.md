@@ -39,6 +39,7 @@ coreml_model = coremltools.converters.keras.convert('foodModel.h5')
 coreml_model.save('foodModel.mlmodel')
 ```
 
+Once the CoreML model was created, I imported it into my Xcode workspace and let Xcode automatically create the class for it. I simply used these classes in my swift code for detection of food.
 
 
 ### Screenshots ###
