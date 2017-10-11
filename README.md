@@ -27,22 +27,57 @@ Once I built my model, I had to convert it into a __.mlmodel__ file for use insi
 ### Converting Trained Models to Core ML ###
 I used [Core ML Tools](https://pypi.python.org/pypi/coremltools) to convert it to the Core ML model format.
 > #### NOTE ####
->Core ML Tools is a Python package (`coremltools`), hosted at the Python Package Index (PyPI). For information about Python packages, see Python Packaging User Guide.
+>Core ML Tools is a Python package (`coremltools`), hosted at the Python Package Index (PyPI). For information about Python packages, see [Python Packaging User Guide](https://packaging.python.org/guides/migrating-to-pypi-org/).
 
 This is how you can convert a kera built model to CoreML using the tools.
 
 ```python
 
 import coremltools
-coreml_model = coremltools.converters.keras.convert('foodModel.h5')
+coreml_model = coremltools.converters.keras.convert('SeeFood.h5')
 
-coreml_model.save('foodModel.mlmodel')
+coreml_model.save('SeeFood.mlmodel')
 ```
 
 Once the CoreML model was created, I imported it into my Xcode workspace and let Xcode automatically create the class for it. I simply used these classes in my swift code for detection of food.
 
 ### Code and Usage ###
-I'll be uploading the code and it's usage soon.
+1. Download the __.mlmodel__ file and drag it into you Xcode Project and wait for a moment.
+
+2. You will see that Xcode has generated input and output classes, and the main class SeeFood, which has a model property and two prediction methods.
+
+3. Open __ViewController.swift__ and import CoreML
+
+```swift
+import UIKit
+import CoreML
+```
+
+4. Implement a method to either capture a photo using __AVFoundation__ or using a photo in your library using __Photos__ framework.
+
+5. Implement the required methods for image classification.
+
+```swift
+let model = SeeFood()
+
+let previewImage = UIImage(data: imageData)
+
+guard let input = model.preprocess(image: previewImage!) else {
+            print("preprocessing failed")
+            return
+}
+        
+guard let result = try? model.prediction(image: input) else {
+            print("prediction failed")
+            return
+}
+
+let confidence = result.foodConfidence["\(result.classLabel)"]! * 100.0
+
+print("\(result.classLabel) - \(converted) %")
+
+```
+
 
 ### Screenshots ###
 ![picture alt](https://raw.githubusercontent.com/chaitanya-ramji/See-Food/master/banner-screenshots.png)
