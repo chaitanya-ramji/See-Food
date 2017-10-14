@@ -86,5 +86,5 @@ print("\(result.classLabel) - \(converted) %")
 - [ ] Cuisine Categorization
 - [ ] Fetch Recipe for image
 - [ ] Increase dataset to include over 300 titles
-- [ ] Reduce latency while identifying the food item
+- [x] Reduce latency while identifying the food item
 - [ ] Port app to Android/Web 
